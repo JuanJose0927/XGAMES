@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="clotheslist" @enterState>
+    <div class="clotheslist_clothes">
+        <h1 class="clotheslist_clothes_tittle">Gamer Clothing</h1>
+        <div class="clotheslist_clothes_box" *ngFor="let clothe of clothesG">
+            <div class="clotheslist_clothes_box_image">
+                <img src="{{clothe.image}}" alt="clothes">
+            </div>
+            <p class="clotheslist_clothes_box_info_text">{{clothe.name}}</p>
+            <p class="clotheslist_clothes_box_info_text--price">{{clothe.price}}</p>
+            <a href="#"><button class="clotheslist_clothes_box_info_button">Buy</button></a>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

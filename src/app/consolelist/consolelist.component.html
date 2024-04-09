@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="content" @enterState>
+    <div class="content_box">
+        <div class="content_box_title">
+            <h1>Consoles!!!!...</h1>
+        </div>
+        <div class="content_box_info" *ngFor="let data of consoles">
+            <p class="content_box_info_text_title">{{data.name}}</p>
+            <div class="content_box_info_image">
+                <img src="{{data.image}}" alt="image">
+            </div>
+            <a href="#"><button class="content_box_info_button">View More</button></a>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

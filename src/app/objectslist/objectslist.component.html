@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="clotheslist">
+    <div class="clotheslist_clothes">
+        <h1 class="clotheslist_clothes_tittle">Normal Clothing and <br> objetcts</h1>
+        <div class="clotheslist_clothes_box" *ngFor="let clothe of clotheslist">
+            <div class="clotheslist_clothes_box_image">
+                <img src="{{clothe.image}}" alt="clothes">
+            </div>
+            <p class="clotheslist_clothes_box_info_text">{{clothe.title}}</p>
+            <p class="clotheslist_clothes_box_info_text">{{clothe.name}}</p>
+            <a href="#"><button class="clotheslist_clothes_box_info_button">Buy</button></a>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

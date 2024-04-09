@@ -1,0 +1,17 @@
+<div class="content" @enterState>
+    <div class="content_box">
+        <div class="content_box_title">
+            <h1>The most new</h1>
+        </div>
+        <div class="content_box_info" *ngFor="let game of games ">
+            <p class="content_box_info_text_title">{{game.name}}</p>
+            <div class="content_box_info_text" *ngFor="let genre of game.genres">
+                <p class="content_box_info_text_title--gender">{{genre.name}}</p>
+            </div>
+            <div class="content_box_info_image">
+                <img src="{{game.background_image}}" alt="image">
+            </div>
+            <a href="#"><button class="content_box_info_button">View More</button></a>
+        </div>
+    </div>
+</div>

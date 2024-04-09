@@ -1,0 +1,13 @@
+<div class="content_shop" @enterState>
+    <div class="content_shop_clothes">
+        <h1 class="content_shop_clothes_tittle">Gamer Clothing</h1>
+        <div class="content_shop_clothes_box" *ngFor="let clothe of clothes">
+            <div class="content_shop_clothes_box_image">
+                <img src="{{clothe.image}}" alt="clothes">
+            </div>
+            <p class="content_shop_clothes_box_info_text">{{clothe.name}}</p>
+            <p class="content_shop_clothes_box_info_text--price">{{clothe.price}}</p>
+            <a href="#"><button class="content_shop_clothes_box_info_button">View More</button></a>
+        </div>
+    </div>
+</div>

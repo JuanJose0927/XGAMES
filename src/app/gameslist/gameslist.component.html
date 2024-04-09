@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="gameslist">
+    <div class="gameslist_games">
+        <h1 class="gameslist_games_tittle">Games</h1>
+        <div class="gameslist_games_box" *ngFor="let game of games">
+            <div class="gameslist_games_box_image">
+                <img src="{{game.background_image}}" alt="game">
+            </div>
+            <p class="gameslist_games_box_info_text">{{game.title}}</p>
+            <p class="gameslist_games_box_info_text">{{game.name}}</p>
+            <a href="#"><button class="gameslist_games_box_info_button">Buy</button></a>
+        </div>
+    </div>
+    <div class="gameslist_line"></div>
+</div>
+<app-footer></app-footer>
